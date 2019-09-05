@@ -1,0 +1,210 @@
+
+* {
+	box-sizing :border-box;
+	font-family:'Nanum Square', sans-serif;
+	color      :#2e2e2e;
+}
+
+body {
+	margin          :0;
+	background-color:#f6f6f6;
+}
+
+a {
+	text-decoration:none;
+}
+
+.header-container {
+	margin-top :200px;
+	margin-left:240px;
+}
+
+.header {
+	margin     :0;
+	font-size  :132px;
+	font-weight:bold;
+	line-height:normal;
+}
+
+.sub-header-container {
+	margin-top:30px;
+}
+
+.sub-header {
+	display    :block;
+	margin     :0;
+	height     :60px;
+	font-size  :27px;
+	font-weight:normal;
+	line-height:normal;
+}
+
+.sub-header .far {
+	margin-right:.4em;
+	font-size   :70%;
+}
+
+.sub-header-image-container {
+	margin-top:30px;
+}
+
+.sub-header-image-inner-container {
+	display:inline-block;
+	width  :200px;
+}
+
+.sub-header.image {
+	display            :inline-block;
+	background-position:center;
+	background-repeat  :no-repeat;
+	background-size    :contain;
+}
+
+.sub-header.image.naver {
+	width           :66px;
+	background-image:url('images/naver.svg');
+}
+
+.sub-header.image.github {
+	width           :222px;
+	background-image:url('images/github.svg');
+}
+
+.introduction-container {
+	position  :relative;
+	margin-top:100px;
+	padding   :100px;
+}
+
+.introduction-container::after {
+	z-index         :-1;
+	position        :absolute;
+	top             :0;
+	bottom          :0;
+	right           :0;
+	width           :470px;
+	background-color:#ffb726;
+	content         :'';
+}
+
+.introduction-quotation {
+	display            :inline-block;
+	width              :30px;
+	height             :30px;
+	background-image   :url('images/double_quotation.svg');
+	background-position:top center;
+	background-repeat  :no-repeat;
+	background-size    :contain;
+}
+
+.introduction-header {
+	margin      :0;
+	padding-left:30px;
+	font-size   :89px;
+	font-weight :normal;
+	line-height :normal;
+}
+
+.introduction-text {
+	display    :block;
+	text-align :right;
+	margin     :0;
+	padding-top:16px;
+	font-size  :32px;
+	font-weight:normal;
+	line-height:53px;
+}
+
+.project-container {
+	position  :relative;
+	margin-top:200px;
+	padding   :100px 200px 100px 100px;
+}
+
+.project-container::after {
+	z-index         :-1;
+	position        :absolute;
+	top             :0;
+	bottom          :0;
+	left            :0;
+	width           :373px;
+	background-color:#ffb726;
+	content         :'';
+}
+
+.project-header-container {
+	display       :flex;
+	flex-direction:row;
+	align-items   :flex-start;
+	justify-items :space-between;
+}
+
+.project-header-header {
+	flex-basis :0;
+	flex-grow  :1;
+	flex-shrink:1;
+}
+
+.project-header-link {
+	flex-basis      :auto;
+	flex-grow       :0;
+	flex-shrink     :0;
+	display         :inline-block;
+	width           :220px;
+	height          :110px;
+	font-size       :43px;
+	font-weight     :bold;
+	line-height     :110px;
+	text-align      :center;
+	background-color:#2e2e2e;
+	color           :white;
+}
+
+.project-header {
+	margin     :0;
+	font-weight:bold;
+	line-height:normal;
+}
+
+.project-header.sub {
+	font-size:38px;
+}
+
+.project-header.main {
+	padding-left:70px;
+	font-size   :92px;
+}
+
+.project-info-container {
+	margin-top  :35px;
+	padding-left:140px;
+}
+
+.project-info {
+	margin     :0;
+	font-size  :25px;
+	font-weight:normal;
+	line-height:normal;
+}
+
+.project-info > .info-header {
+	display:inline-block;
+	width  :170px;
+}
+
+.project-info + .project-info {
+	margin-top:8px;
+}
+
+.project-info-link {
+	font-size     :60%;
+	vertical-align:super;
+}
+
+.project-desc {
+	margin      :55px 0 0 0;
+	padding-left:140px;
+	font-size   :29px;
+	font-weight :normal;
+	line-height :47px;
+}

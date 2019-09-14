@@ -5,6 +5,8 @@
 }
 
 body {
+	z-index: -3;
+	position: relative;
 	margin: 0;
 	background-color: #f2f2f2;
 }
@@ -25,8 +27,9 @@ i.fas.fa-external-link-square-alt {
 }
 
 .whole-container {
+	position: relative;
+	z-index: -2;
 	margin: 0 auto;
-	padding: 25px;
 	max-width: 900px;
 	background-color: white;
 }
@@ -53,16 +56,16 @@ i.fas.fa-external-link-square-alt {
 .introduction-container {
 	position: relative;
 	margin-top: 150px;
-	padding: 100px 50px 100px 50px;
+	padding: 50px;
 }
 
 .introduction-container::after {
 	z-index: -1;
 	position: absolute;
 	top: 0;
-	bottom: 0;
 	right: 0;
-	width: 60%;
+	bottom: 0;
+	width: 70%;
 	background-color: #ffb726;
 	content: '';
 }
@@ -97,8 +100,20 @@ i.fas.fa-external-link-square-alt {
 }
 
 .project-container {
-	margin-top: 25px;
-	padding: 100px 0 100px 0;
+	position: relative;
+	margin-top: 75px;
+	padding: 50px;
+}
+
+.project-container::after {
+	z-index: -1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 30%;
+	background-color: #ffb726;
+	content: '';
 }
 
 .project-header-container {

@@ -7,8 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>TinNet - Portfolio of AcrylicShrimp</title>
     <script src="https://kit.fontawesome.com/a0669b0766.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.css">
 	<link rel="stylesheet" type="text/css" href="../font/nanumsquare.css">
     <link rel="stylesheet" type="text/css" href="project.css">
+    <link rel="stylesheet" type="text/css" href="tinnet.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
     <script src="tinnet.js"></script>
 </head>
 <body>
@@ -38,7 +41,9 @@
                 <p class="feature-text">
                     대부분의 시간 의존적 연산을 행렬곱으로 표현할 수 있다는 것을 알고 나서 행렬 곱셈을 최적화하는데 많은 시간을 투자했고, AVX 명령어를 활용하여 기존 대비 수배 이상의 엄청난 성능 향상을 얻을 수 있었습니다. 이후 OpenMP를 이용한 병렬화를 적용해 추가적인 성능 향상이 있었습니다.
                 </p>
-                <div id="graph"></div>
+                <div class="white-color">
+                    <canvas id="graph" class="feature-image"></canvas>
+                </div>
             </div>
         </div>
     </div>
